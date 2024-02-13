@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /> 
+     <style>
+      a {
+        margin: 10px;
+        
+      }
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .feature-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: #fff;
+        border-radius: 0.75rem;
+      }
+
+      .icon-link {
+        display: inline-flex;
+        align-items: center;
+      }
+      .icon-link > .bi {
+        margin-top: 0.125rem;
+        margin-left: 0.125rem;
+        transition: transform 0.25s ease-in-out;
+        fill: currentColor;
+      }
+      .icon-link:hover > .bi {
+        transform: translate(0.25rem);
+      }
+
+      .icon-square {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        border-radius: 0.75rem;
+      }
+
+      .rounded-4 {
+        border-radius: 0.5rem;
+      }
+      .rounded-5 {
+        border-radius: 1rem;
+      }
+
+      .text-shadow-1 {
+        text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+      }
+      .text-shadow-2 {
+        text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+      }
+      .text-shadow-3 {
+        text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+      }
+
+      .container {
+        margin-left: 0px;
+      }
+      header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+body, html {
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        .container {
+            max-width: 100%; /* Ensure containers do not exceed 100% width */
+        }
+        .carousel-item img {
+            width: 80%;
+            height: 350px;
+            margin-top: 80px;
+        }
+        .featurette img {
+            height: 450px;
+            width: 100%;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            height: 200px;
+        }
+        .image-title {
+            text-align: center;
+            margin: 2px;
+            color: rgb(8, 8, 8);
+        }
+        .containers {
+            background-color: black;
+            width: 100%;
+        }
+        footer {
+            color: white;
+            text-align: center;
+        }
+    </style> 
+
+  </head>    
+  <body >
+    
+    <header>
+      <div class="container-fluid" style="background-color: rgb(16, 16, 16);">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
+          >
+            <svg
+              class="bi me-2"
+              width="90"
+              height="64"
+              role="img"
+              aria-label="Bootstrap"
+            >
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a
+                href="./resume.html"
+                class="nav-link px-2 link-secondary"
+                style="color: #fff;background-color: skyblue;"
+                >Overview</a
+              >
+            </li>
+            <li>
+              <a
+                href="./studies.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Studies</a
+              >
+            </li>
+            <li>
+              <a
+                href="./Internship.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Internships</a
+              >
+            </li>
+            <li>
+              <a
+                href="./projects.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./certificates.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >certificates</a
+              >
+            </li>
+            <li>
+              <a
+                href="./events.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Events Participated</a
+              >
+            </li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+             
+             <a href="prompt.html"
+              ><button type="button" class="btn btn-primary">
+                Prompt about me
+              </button></a
+            >
+          </form>
+
+          <div class="dropdown text-end">
+            <a
+              href="#"
+              class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="profile.png"
+                alt="mdo"
+                width="32"
+                height="32"
+                class="rounded-circle"
+              />
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid"></div>
+    <div class="row featurette">
+      <div class="col-md-8">
+        
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+              <img
+                src="ROBOT.png"
+                class="d-block w-100"
+                alt="dummy"
+                width="80%"
+                height="350"
+                style="margin-top: 80px;"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="BLACK.png"
+                class="d-block w-100"
+                alt="dummy"
+                width="80%"
+                height="350"
+                style="margin-top: 80px;"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+        <div class="col-md-4">
+          <img
+            src="Jane Doe.png"
+            class="d-block w-100"
+            alt="myself"
+            
+            width="100%" style="height: 550px";
+          />
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container" >
+      
+      <h2 class="text-center my-4" style="background-color: black;color: white;width: 100%;">PORTFOLIO</h2>
+      <div class="d-flex justify-content-around">
+        <div class="image-container"><a href="https://www.linkedin.com/in/hari-haran-k-5aa27b227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.OvPXgPvQmPjjOFyHuiY53gAAAA&pid=Api&P=0&h=180" alt="LinkedIn" class="img-fluid" style="height: 200px;">
+         </a> <h5 class="image-title" style="text-align: center;margin: 2px;color: rgb(8, 8, 8);">LinkedIn</h5>
+        </div>
+        <div class="image-container">
+<a href="https://github.com/Hariharan-techiee/"         ><img src="https://tse4.mm.bing.net/th?id=OIP.8SVgggxQcO5L6Dw_61ac4QHaEK&pid=Api&P=0&h=180" alt="Resume" class="img-fluid" style="height: 200px;"></a> <h5 class="image-title" style="color: black;text-align: center;padding: 3px;">github</h5>    </div> <div class="image-container">
+          <a href="https://drive.google.com/file/d/1FtcCYzw84BbNyR-1KPDobWuzApq2LkmB/view?usp=drivesdk"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAADlCAMAAAAP8WnWAAAAe1BMVEUAAAD///8BAQEGBga8vLx6enro6OiCgoK4uLiUlJT19fUmJib6+voqKiqysrLy8vI3Nzfd3d1xcXFlZWVMTEyqqqo6OjoSEhJcXFxISEhRUVFhYWGNjY1CQkLe3t4hISGcnJzJycnT09NsbGwPDw+goKAaGhp+fn6Xl5fqqO8+AAAEO0lEQVR4nO2dgXaiMBBFR6IiKtWioiLWtlr1/79wA2IXe2wJbNz64ruKhRwc5hpMAqeCeO6i5LczuBUikk3O4hVPz8FZ52vOXSiHCuVQoRwqlEOFcqhQDhXKoUI5VCiHCuVQoRwqlEOFcqhQDhXKoUI5VCiHCuVQoRwqlEOFcqhQDhXKoUI5VCiHCuVQoRwqlDPhqWuRmZ2crMm1WxZp28mJciZQjnKUM8K63NBhOStu9yv3nAYNad+7XKvVaxziACHXJKh+jw8h1zATDLlGNYci1ygRytWMaScM5X5OhHI1Y9oJ85hynjptQRV/v90gppzIJOjM85mceVRiu42mxYqIcrLu6sLRVs5y49YlT8WKgHIiL63sWKG/OS+H5cMiPVucxsOUK1wW52Wnau6rnFqPy8SDIhFMuRPT87KSq2DKdfOa648/N3i6bFWx5JXm4OQ8ec1L36q2hCkn77pw9O3u+Lkimly+0w2es70ykfPFuL5LBE1OV1Y8O+erW5R8CDbfTi5YFomgycn6TffTeYOiX54neZkr/dxieB6NDHNHPysMv5y4hRyhqNPI6wI9fv5Sc0NMOU923ecLXrqTrHR6SdEBgsmpa43/t9vDklPXQnun/uHv83OIgiVXNxHK1YxpJ8y175xnEht04GzkVkoES07C3pMBnWJ1MLmvA63rQHbiymU5XXPDUTV9SLmrnfgPiUDJOd1a1k2EcjVj2gnzaHLZ8Mv02vuCJud2aynjkck/a38Uq6PJtUyA7MRN5SBP7SkJ2712BXoFv0gESo4jlFIilKsZ006YR5NThjc0OicCJed0g6JEhSbsi0Sg5DyJW8Nq3B6hgMrFRnKgw6/9oVPNISkSgZKrmwjlasa0E+bR5Orcv1DQ5MTw/BCkXM3IaHJOdwVmnTjoCIXDL1Q5FQ6qAT3kcflg1bSbw+zn6lUdllzdRChXM6adMA8k5/TvxBsGxZBriNNyd39VjWFrOOo3IXvXvcsVPwD5R+5VzgqUq4ZyJlCOcpQzwprcwuQkpSGHRfX2TLAmd49QDhXKoUI5VCiHCuVQoRwqlEOFcqhQDhXKoUI5VCiHCuVQoRwqlEOFcqhQDhXKoUI5VCiHCuVQoRwqlEOFcqhQDhXKoUI5VCiHivEVFCD57U/3hjgtl12S5VfZ3TT67T42/XXeSXZLLJVN+aXUlX7s8tcSt0ziduicw05pQTOVRE8LiYPlOFiKv/fTgwJssnXNRdEgTXyJ/FUnkfy+gUfV3qebnvhhepynx7ize53XvT7+PaBTXn+M04GfzGLfXyWBrBPpTNJFJz1E0Sz1P6JpL5Hgt/NshCdjfzYO/MPqI97681ki8VLkXT9ep8FhE/hzeZWjnhDRzUS62kyjbbgKl0sJdlmZ3jlXYSxJsl9udzIIQrH0C87/zGUXOolKZaXWUVXdXBYAr/IOuTfhD61+UV5buOeYAAAAAElFTkSuQmCC"alt="GitHub" class="img-fluid" style="height: 200px;">
+          </a> <h5 class="image-title" style="text-align: center; padding: 3px;">RESUME</h5>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br> 
+ 
+     <div class="container px-4 py-4" id="featured-3">
+
+  <h2 class="pb-2 border-bottom" style="background-color: #0e0e0e;text-align: center;color: white;width: 100%;">KEY SKILLS</h2>
+  <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+      </div>
+      <h3 class="fs-2 text-body-emphasis" style="background-color: rgb(12, 12, 12);padding: 5px;color: white;">Machine Learning</h3>
+      <p>Proficient in machine learning techniques and algorithms. Experienced in applying machine learning models to solve real-world problems. Continuously learning and adapting to new advancements in the field.</p>
+    </div>
+
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+      </div>
+      <h3 class="fs-2 text-body-emphasis" style="background-color: rgb(10, 10, 10);padding: 5px;color: white;">Deep Learning</h3>
+      <p>Extensive experience in deep learning frameworks and architectures. Skilled in developing neural networks for various applications, including image recognition and natural language processing.</p>
+    </div>
+
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+      </div>
+      <h3 class="fs-2 text-body-emphasis" style="background-color: rgb(11, 11, 11);padding: 5px;color: white;">Data Analysis</h3>
+      <p>Proven expertise in data analysis and interpretation. Skilled in using statistical methods and data visualization tools to derive meaningful insights. Strong analytical and problem-solving skills.</p>
+    </div>
+
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+      </div>
+      <h3 class="fs-2 text-body-emphasis" style="background-color: rgb(15, 15, 15);padding: 5px;color: white;">Flutter</h3>
+      <p>Proficient in Flutter for building cross-platform mobile applications. Skilled in creating engaging and responsive user interfaces. Continuously exploring new features and updates in Flutter development.</p>
+    </div>
+
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+      </div>
+      <h3 class="fs-2 text-body-emphasis" style="background-color: rgb(9, 9, 9);padding: 5px;color: white;">Web Development</h3>
+      <p>Experienced in web development technologies and frameworks. Proficient in creating responsive and dynamic websites. Familiar with front-end and back-end development, ensuring seamless user experiences.</p>
+    </div>
+
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+      </div>
+      <h3 class="fs-2 text-body-emphasis" style="background-color: #0b0b0b;padding: 5px;color: #fff;">AWS Basics</h3>
+      <p>In AWS, I have hands-on experience with tools such as EC2, S3, and SageMaker. Proficient in setting up and managing AWS resources. Continuously updating skills to stay informed about the latest AWS advancements.</p>
+    </div>
+  </div>
+</div> 
+
+
+ <div class="container" style="background-color: black;width: 100%;">
+  <footer class="d-flex flex-column align-items-center py-3 my-4 border-top">
+    <h2 class="mb-4" style="color:white;padding:  5px;">Contact Me Through</h2>
+    <ul class="nav list-unstyled d-flex">
+      <li class="mx-3"><a class="text-body-secondary" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnNSpGgnwvdpWRlTtkNlvMbMMfGcGPfkVVZTlqxGrVThFDpJMcXMVxrlxmpMzmbGhNGKlg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16"><path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/></svg></a></li>
+      <li class="mx-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/hari-haran-k-5aa27b227"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a></li>
+      <li class="mx-3"><a class="text-body-secondary" href="https://www.instagram.com/hari_rnh?igsh=MTZxZ3BiZ3BlZnR0OQ=="><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a></li>
+    </ul>
+  </footer>
+</div> 
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script> 
+  </body>
+</html>

@@ -1,0 +1,320 @@
+<!-- intern.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intern Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      a {
+        margin: 10px;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding-top: 6%;
+      }
+
+      .row {
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .col-md-4 img {
+        width: 100%;
+        height: auto;
+      }
+
+      .col-md-8 p {
+        padding: 20px;
+        font-size: 18px;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-on-scroll {
+        animation: fadeIn 2s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid" style="background-color: rgb(16, 16, 16)">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
+          >
+            <svg
+              class="bi me-2"
+              width="90"
+              height="64"
+              role="img"
+              aria-label="Bootstrap"
+            >
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="nav-link px-2 link-secondary"
+                style="color: #fff"
+                >Overview</a
+              >
+            </li>
+            <li>
+              <a
+                href="./studies.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Studies</a
+              >
+            </li>
+            <li>
+              <a
+                href="./Internship.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff; background-color: skyblue"
+                >Internships</a
+              >
+            </li>
+            <li>
+              <a
+                href="./projects.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./certificates.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >certificates</a
+              >
+            </li>
+            <li>
+              <a
+                href="./events.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Events Participated</a
+              >
+            </li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <!-- Replace the search input with a green button that triggers a prompt -->
+            <a href="prompt.html"
+              ><button type="button" class="btn btn-primary">
+                Prompt about me
+              </button></a
+            >
+          </form>
+
+          <div class="dropdown text-end">
+            <a
+              href="#"
+              class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="profile.png"
+                alt="mdo"
+                width="32"
+                height="32"
+                class="rounded-circle"
+              />
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li>
+                <a class="dropdown-item" href="./profile.html">Profile</a>
+              </li>
+
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row my-3">
+        <div class="col-md-4">
+          <!-- Column 1: Image -->
+          <img
+            src="https://media.licdn.com/dms/image/C510BAQExb_0-UTRsiA/company-logo_200_200/0/1630566473639/quintessence_business_solutions_and_services_p_ltd__logo?e=2147483647&v=beta&t=MiO2TBwtHdncoKgbp_9OohmH5xzL2D3QE_nAOzBhgBc"
+            style="
+              width: 300px;
+              height: 400px;
+              margin-left: 40px;
+              margin-top: 40px;
+            "
+            alt="Image 1"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-8">
+          <!-- Column 2: Text -->
+          <p style="color: rgb(222, 222, 17)">QBSS Internship</p>
+          <ul>
+            <li>
+              <p>I joined this internship in May 2023 as a project intern.</p>
+            </li>
+            <li>
+              <p>
+                I worked on automating the task of writing dxcode based on
+                doctor descriptions.
+              </p>
+            </li>
+            <li>
+              <p>
+                We utilized Jupyter and machine learning techniques for the
+                automation.
+              </p>
+            </li>
+            <li>
+              <p>
+                We successfully created a structured approach for automating the
+                task.
+              </p>
+            </li>
+            <li>
+              <p>The internship concluded in December 2023.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row my-3">
+        <div class="col-md-8">
+          <!-- Column 2: Text -->
+          <p style="color: aqua">Magnus Vista</p>
+          <ul>
+            <li>
+              <p>
+                I joined this internship in January 2024 as a project intern.
+              </p>
+            </li>
+
+            <li><p>We were assigned tasks related to image processing.</p></li>
+
+            <li>
+              <p>
+                I created a RESNET model for predicting images as part of the
+                internship project.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <!-- Column 1: Image -->
+          <img
+            src="data:image/png;base64,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"
+            alt="Image 2"
+            class="img-fluid"
+            style="height: 300px; width: 300px"
+          />
+        </div>
+      </div>
+
+      <div class="row my-3">
+        <div class="col-md-4">
+          <!-- Column 1: Image -->
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Image 3"
+            class="img-fluid"
+            style="
+              width: 300px;
+              height: 400px;
+              margin-left: 40px;
+              margin-top: 30px;
+            "
+          />
+        </div>
+        <div class="col-md-8">
+          <!-- Column 2: Text -->
+          <p style="color: blue">Prodigy Infotech</p>
+          <ul>
+            <li><p>joined the Educationship internship in January 2024.</p></li>
+            <li><p>The internship duration was one month.</p></li>
+            <li>
+              <p>
+                During the internship, I accomplished tasks like Real estate
+                price prediction,Applying K-means clustering for customer
+                segmentation as basic tasks
+              </p>
+            </li>
+            <li>
+              <p>
+                And After that i have created Dog or classification model,hand
+                gesture recognition using google teachable and food image
+                classification using google teachable
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS and Popper.js (for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Your intern page content goes here -->
+
+    <script>
+      // Fetch and inject the header into the header-container div
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("header-container").innerHTML = html;
+        })
+        .catch((error) => console.error("Error fetching header:", error));
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+<!-- intern.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      a {
+        margin: 10px;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 75vh;
+      }
+
+      .profile {
+        margin-bottom: 2px;
+      }
+
+      .profile img {
+        width: 300px; /* Adjust the width as needed */
+        height: auto;
+        border-radius: 50%;
+        border: 2px solid #fff; /* Optional: Add a border around the image */
+      }
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .card {
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s, transform 0.5s;
+      }
+
+      /* Animation styles */
+      .card.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid" style="background-color: rgb(16, 16, 16)">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
+          >
+            <svg
+              class="bi me-2"
+              width="90"
+              height="64"
+              role="img"
+              aria-label="Bootstrap"
+            >
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="nav-link px-2 link-secondary"
+                style="color: #fff"
+                >Overview</a
+              >
+            </li>
+            <li>
+              <a
+                href="./studies.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Studies</a
+              >
+            </li>
+            <li>
+              <a
+                href="./Internship.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Internships</a
+              >
+            </li>
+            <li>
+              <a
+                href="./projects.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./certificates.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >certificates</a
+              >
+            </li>
+            <li>
+              <a
+                href="./events.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Events Participated</a
+              >
+            </li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <!-- Replace the search input with a green button that triggers a prompt -->
+            <a href="prompt.html"
+              ><button type="button" class="btn btn-primary">
+                Prompt about me
+              </button></a
+            >
+          </form>
+
+          <div class="dropdown text-end">
+            <a
+              href="#"
+              class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="profile.png"
+                alt="mdo"
+                width="32"
+                height="32"
+                class="rounded-circle"
+              />
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li>
+                <a class="dropdown-item" href="./profile.html">Profile</a>
+              </li>
+
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container" style="margin-top: 7%">
+      <div class="profile">
+        <img src="profile.png" alt="Profile Image" />
+      </div>
+      <div class="cards">
+        <div class="card" id="card1">
+          <h2>About My Early Years</h2>
+          <p>My name is Hariharan, and I was born on October 5, 2003.</p>
+        </div>
+
+        <div class="card" id="card2">
+          <h2>My Birthplace</h2>
+          <p>I was born in Coimbatore, Tamil Nadu.</p>
+        </div>
+
+        <div class="card" id="card3">
+          <h2>Favorite Hobbies</h2>
+          <p>One of my favorite hobbies is playing chess and cricket.</p>
+        </div>
+
+        <div class="card" id="card4">
+          <h2>Loves solving problems</h2>
+          <p>I enjoy solving difficult problems</p>
+        </div>
+
+        <div class="card" id="card5">
+          <h2>Key Project:Baby Cry Project</h2>
+          <p>I put in a lot of hard work to develop it.</p>
+        </div>
+
+        <div class="card" id="card6">
+          <h2>Continuous Learning</h2>
+          <p>upskill myself regularly.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Add a class to each card to trigger the animation
+        const cards = document.querySelectorAll(".card");
+        cards.forEach((card, index) => {
+          setTimeout(() => {
+            card.classList.add("show");
+          }, index * 200);
+        });
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

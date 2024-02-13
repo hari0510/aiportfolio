@@ -1,0 +1,227 @@
+<!-- intern.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>certificates</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      a {
+        margin: 10px;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .certificate img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        transition: transform 0.1s ease-in-out;
+      }
+
+      .certificate-header {
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .certificate-details {
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+
+      .certificate-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .certificate-description {
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body style="padding-top: 7%">
+    <header>
+      <div class="container-fluid" style="background-color: rgb(16, 16, 16)">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
+          >
+            <svg
+              class="bi me-2"
+              width="90"
+              height="64"
+              role="img"
+              aria-label="Bootstrap"
+            >
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="nav-link px-2 link-secondary"
+                style="color: #fff"
+                >Overview</a
+              >
+            </li>
+            <li>
+              <a
+                href="./studies.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Studies</a
+              >
+            </li>
+            <li>
+              <a
+                href="./Internship.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Internships</a
+              >
+            </li>
+            <li>
+              <a
+                href="./projects.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./certificates.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff; background-color: skyblue"
+                >certificates</a
+              >
+            </li>
+            <li>
+              <a
+                href="./events.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Events Participated</a
+              >
+            </li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <!-- Replace the search input with a green button that triggers a prompt -->
+            <a href="#"
+              ><button type="button" class="btn btn-primary">
+                Prompt about me
+              </button></a
+            >
+          </form>
+
+          <div class="dropdown text-end">
+            <a
+              href="#"
+              class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="profile.png"
+                alt="mdo"
+                width="32"
+                height="32"
+                class="rounded-circle"
+              />
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li>
+                <a class="dropdown-item" href="./profile.html">Profile</a>
+              </li>
+
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Your intern page content goes here -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="certificate">
+            <div
+              class="certificate-header"
+              style="background-color: rgb(179, 130, 238)"
+            >
+              Python for datascience and machine learning bootcamp
+            </div>
+            <img src="udemy1.png" alt="Certificate 1" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="certificate" style="padding-top: 7%">
+            <div class="certificate-header" style="background-color: #0044ff">
+              NPTEL
+            </div>
+            <br />
+            <img src="nptell.png" alt="Certificate 2" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="certificate" style="padding-top: 7%">
+            <div
+              class="certificate-header"
+              style="background-color: rgb(150, 130, 238)"
+            >
+              Python for Computer Vision and Deeplearning
+            </div>
+            <img src="udemy2.png" alt="Certificate 3" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Fetch and inject the header into the header-container div
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("header-container").innerHTML = html;
+        })
+        .catch((error) => console.error("Error fetching header:", error));
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+<!-- intern.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      a {
+        margin: 10px;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .image-container {
+        text-align: center;
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .image-container h2 {
+        margin-top: 10px;
+        font-size: 20px;
+      }
+
+      .image-container p {
+        margin: 10px 0;
+      }
+
+      .image-container img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid" style="background-color: rgb(16, 16, 16)">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
+          >
+            <svg
+              class="bi me-2"
+              width="90"
+              height="64"
+              role="img"
+              aria-label="Bootstrap"
+            >
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="nav-link px-2 link-secondary"
+                style="color: #fff"
+                >Overview</a
+              >
+            </li>
+            <li>
+              <a
+                href="./studies.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Studies</a
+              >
+            </li>
+            <li>
+              <a
+                href="./Internship.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Internships</a
+              >
+            </li>
+            <li>
+              <a
+                href="./projects.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./certificates.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff"
+                >certificates</a
+              >
+            </li>
+            <li>
+              <a
+                href="./events.html"
+                class="nav-link px-2 link-body-emphasis"
+                style="color: #fff; background-color: skyblue"
+                >Events Participated</a
+              >
+            </li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <!-- Replace the search input with a green button that triggers a prompt -->
+            <a href="prompt.html"
+              ><button type="button" class="btn btn-primary">
+                Prompt about me
+              </button></a
+            >
+          </form>
+
+          <div class="dropdown text-end">
+            <a
+              href="#"
+              class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="profile.png"
+                alt="mdo"
+                width="32"
+                height="32"
+                class="rounded-circle"
+              />
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li>
+                <a class="dropdown-item" href="./profile.html">Profile</a>
+              </li>
+
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container" style="padding-top: 5%">
+      <h1 style="text-align: center">Hackathons and events</h1>
+      <p style="text-align: center; color: rgb(153, 127, 255)">
+        click the image to get more details
+      </p>
+      <div class="gallery">
+        <div class="image-container">
+          <a
+            href="https://www.linkedin.com/posts/hari-haran-k-5aa27b227_activity-7039981614734462976-vrd8?utm_source=share&utm_medium=member_desktop"
+            ><img style="height: 200px" src="eshwar.png" alt="Certificate 1"
+          /></a>
+          <h2>I square hackathon</h2>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.linkedin.com/posts/hari-haran-k-5aa27b227_activity-7142558809654181888-0lXu?utm_source=share&utm_medium=member_desktop"
+            ><img style="height: 200px" src="coding.png" alt="Certificate 2"
+          /></a>
+          <h2>Innovative India Coding Championship</h2>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.linkedin.com/posts/hari-haran-k-5aa27b227_eyantra-roboticscompetition-iitbombay-activity-7142561135664218112-AJQ5?utm_source=share&utm_medium=member_desktop"
+            ><img style="height: 200px" src="eyantra.png" alt="Certificate 3"
+          /></a>
+          <h2>Eyantra IIT Bombay</h2>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.linkedin.com/posts/hari-haran-k-5aa27b227_certificate-activity-7142566586938212352-UsaW?utm_source=share&utm_medium=member_desktop"
+            ><img style="height: 200px" src="gdsc.png" alt="Certificate 4"
+          /></a>
+          <h2>GDSC hackathon</h2>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.linkedin.com/posts/hari-haran-k-5aa27b227_ai-tool-workshop-activity-7157026373339901952-OZa8?utm_source=share&utm_medium=member_desktop"
+            ><img style="height: 200px" src="AI.png"
+          /></a>
+          <h2>AI tools workshop</h2>
+        </div>
+        <div class="image-container">
+          <a
+            href="https://www.linkedin.com/posts/hari-haran-k-5aa27b227_activity-6997042085598027777-ANDq?utm_source=share&utm_medium=member_desktop"
+            ><img style="height: 200px" src="perp.png" alt="Certificate 6"
+          /></a>
+          <h2>Perpetual Fest</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Your intern page content goes here -->
+
+    <script>
+      // Fetch and inject the header into the header-container div
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("header-container").innerHTML = html;
+        })
+        .catch((error) => console.error("Error fetching header:", error));
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
